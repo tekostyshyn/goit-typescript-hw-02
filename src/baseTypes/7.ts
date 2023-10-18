@@ -14,20 +14,6 @@ enum Day {
 }
 
 function isWeekend(day: Day): boolean {
-  switch (day) {
-    case Day.MON:
-      return false;
-    case Day.TUE:
-      return false;
-    case Day.WED:
-      return false;
-    case Day.THU:
-      return false;
-    case Day.FRI:
-      return false;
-    case Day.SAT:
-      return true;
-    case Day.SUN:
-      return true;
-  }
-} 
+  return day === Day.SAT || day === Day.SUN
+}
+
